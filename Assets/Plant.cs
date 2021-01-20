@@ -18,3 +18,12 @@ public class Plant : MonoBehaviour
             Destroy(gameObject);
     }
 
+    void Start()
+    {
+        StartCoroutine(MySecUpdater());
+        int cap = Random.Range(5, 10);
+        water_capacity = cap;
+        water = cap;
+        for (int i = 0; i < 20; i++)
+            Genome.Add(Random.Range(0, 2));
+    }
