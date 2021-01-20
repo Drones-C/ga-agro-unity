@@ -35,3 +35,12 @@ public class MakeField : MonoBehaviour
         
         Population.Add(temp);
         StartCoroutine(popul(temp));
+    }
+
+    private IEnumerator popul(GameObject plant)
+    {
+        yield return new WaitForSeconds(25);
+        
+        Destroy(plant, 25);
+        Population.Remove(plant);
+    }
