@@ -40,6 +40,7 @@ public class MakeField : MonoBehaviour
     private IEnumerator popul(GameObject plant)
     {
         yield return new WaitForSeconds(25);
+        GameObject mother = Population[Random.Range(0, Population.Count)];
         
         Destroy(plant, 25);
         Population.Remove(plant);
