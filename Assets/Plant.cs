@@ -27,3 +27,13 @@ public class Plant : MonoBehaviour
         for (int i = 0; i < 20; i++)
             Genome.Add(Random.Range(0, 2));
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Water>())
+        {
+            if(water<=water_capacity)
+                water++;
+        }
+    }
+}
