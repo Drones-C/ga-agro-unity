@@ -42,6 +42,13 @@ public class MakeField : MonoBehaviour
         yield return new WaitForSeconds(25);
         GameObject mother = Population[Random.Range(0, Population.Count)];
         
+        //crossover
+        for (int i = 0; i < 2; i++)
+        {
+            create_individual((mother.GetComponent<Plant>().water_capacity+plant.GetComponent<Plant>().water_capacity)/2,
+                                 (mother.GetComponent<Plant>().water+plant.GetComponent<Plant>().water)/2);
+        }
+        
         Destroy(plant, 25);
         Population.Remove(plant);
     }
