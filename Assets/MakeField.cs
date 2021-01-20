@@ -52,3 +52,24 @@ public class MakeField : MonoBehaviour
         Destroy(plant, 25);
         Population.Remove(plant);
     }
+
+    void Start()
+    {
+        float x = 0;
+        float z = 0;
+        int g = 0;
+        GameObject temp;
+
+        for (int i = 0; i < 50; i++)
+        {
+            x = Random.Range(x2.position.x, x1.position.x);
+            z = Random.Range(x1.position.z, x2.position.z);
+            g = Random.Range(0, Crops.Length);
+
+            Instantiate(Dirt, new Vector3(x, 50, z), new Quaternion(0, 0, 0, 1));
+            temp = Instantiate(Crops[g], new Vector3(x, 50, z), new Quaternion(0, 0, 0, 1));
+            Population.Add(temp);
+            StartCoroutine(popul(temp));
+        }
+    }
+}
