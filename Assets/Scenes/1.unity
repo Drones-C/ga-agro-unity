@@ -136,17 +136,17 @@ PrefabInstance:
     - target: {fileID: 6488313494072086829, guid: bf9280e69835e964c8027718fea02da8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.34
+      value: 576.4
       objectReference: {fileID: 0}
     - target: {fileID: 6488313494072086829, guid: bf9280e69835e964c8027718fea02da8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 65.3
       objectReference: {fileID: 0}
     - target: {fileID: 6488313494072086829, guid: bf9280e69835e964c8027718fea02da8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.37
+      value: 639
       objectReference: {fileID: 0}
     - target: {fileID: 6488313494072086829, guid: bf9280e69835e964c8027718fea02da8,
         type: 3}
@@ -187,16 +187,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488313494072086830, guid: bf9280e69835e964c8027718fea02da8,
-        type: 3}
-      propertyPath: field of view
-      value: 80.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488313494072086830, guid: bf9280e69835e964c8027718fea02da8,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf9280e69835e964c8027718fea02da8, type: 3}
