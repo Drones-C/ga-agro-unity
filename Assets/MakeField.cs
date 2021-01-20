@@ -26,6 +26,10 @@ public class MakeField : MonoBehaviour
 
         Instantiate(Dirt, new Vector3(x, 50, z), new Quaternion(0, 0, 0, 1));
         temp = Instantiate(Crops[g], new Vector3(x, 50, z), new Quaternion(0, 0, 0, 1));
+        //mutate
+        if (r >= (water / cap) * 100)
+            cap += 10;
+
         temp.GetComponent<Plant>().water_capacity = cap;
         temp.GetComponent<Plant>().water = cap;
         
