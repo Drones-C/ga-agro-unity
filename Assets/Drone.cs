@@ -14,6 +14,15 @@ public class Drone : MonoBehaviour
         transform.Translate(flight_vector,Space.Self);
     }
 
+    private IEnumerator Rotation(short dir = 1)
+    {
+        yield return new WaitForSeconds(Time.deltaTime);
+        transform.Rotate(Vector3.forward * dir,Time.deltaTime * 15);
+
+        if(transform.rotation.z < 0.14)
+            StartCoroutine(Rotation());
+    }
+
     private IEnumerator TakeOff()
     {
         yield return new WaitForSeconds(Time.deltaTime);
