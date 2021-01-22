@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Drone : MonoBehaviour
 {
-    public short speed;
+    public GameObject TheDrone;
+    private short speed;
 
     private void Flight(Vector3 flight_vector)
     {
@@ -15,9 +16,9 @@ public class Drone : MonoBehaviour
     private IEnumerator Rotation(short dir = 1)
     {
         yield return new WaitForSeconds(Time.deltaTime);
-        transform.Rotate(Vector3.forward * dir,Time.deltaTime * 15);
+        TheDrone.transform.Rotate(Vector3.forward * dir,Time.deltaTime * 15);
 
-        if(transform.rotation.z < 0.14)
+        if(TheDrone.transform.rotation.z < 0.14)
             StartCoroutine(Rotation());
     }
 
