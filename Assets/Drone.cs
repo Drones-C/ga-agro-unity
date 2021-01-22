@@ -100,7 +100,7 @@ public class Drone : MonoBehaviour
             flight_vector = new Vector3(Time.deltaTime * -speed,0,0);
             Flight(flight_vector);
         }
-        else if(!isAtx2)
+        else if(!isAtx2 && isAtx1)
         {
             StartCoroutine(BalanceRotation(Vector3.forward,'z',-1));
             StartCoroutine(Rotation(Vector3.right,'x',1));
@@ -114,10 +114,40 @@ public class Drone : MonoBehaviour
             flight_vector = new Vector3(0,0,Time.deltaTime * speed);
             Flight(flight_vector);
         }
-        else if(!isAtx3)
+        else if(!isAtx3 && isAtx2)
         {
+            StartCoroutine(BalanceRotation(Vector3.right,'x',-1));
+            StartCoroutine(Rotation(Vector3.forward,'z',-1));
             isAtx2 = false;
             isAtx3 = true;
+        } 
+        
+        //Third line of the field
+        if(isAtx3 && transform.position.x < 693)
+        {
+            flight_vector = new Vector3(Time.deltaTime * speed,0,0);
+            Flight(flight_vector);
+        }
+        else if(!isAtx4 && isAtx3)
+        {
+            StartCoroutine(BalanceRotation(Vector3.forward,'z',1));
+            StartCoroutine(Rotation(Vector3.right,'x',-1));
+            isAtx3 = false;
+            isAtx4 = true;
+        } 
+        
+        //Fourth line of the field
+        if(isAtx4 && transform.position.z > 340)
+        {
+            flight_vector = new Vector3(0,0,Time.deltaTime * -speed);
+            Flight(flight_vector);
+        }
+        else if(!isAtx1 && isAtx4)
+        {
+            StartCoroutine(BalanceRotation(Vector3.forward,'x',1));
+            StartCoroutine(Rotation(Vector3.right));
+            isAtx4 = false;
+            isAtx1 = true;
         } 
         
             

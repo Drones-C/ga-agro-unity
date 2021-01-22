@@ -60,7 +60,7 @@ public class MakeField : MonoBehaviour
         int g = 0;
         GameObject temp;
 
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 10; i++)
         {
             x = Random.Range(x2.position.x, x1.position.x);
             z = Random.Range(x1.position.z, x2.position.z);
