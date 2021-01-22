@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b884a57d-e067-4cf6-bedb-d7c0a80bf57a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Carrot_Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Carrot_Plant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Corn_Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Corn_Plant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Eggplant_Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Eggplant_Plant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Pumpkin_Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Pumpkin_Plant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Tomato_Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Tomato_Plant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Turnip_Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cartoon_Farm_Crops/Prefabs/Standard/Turnip_Plant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/contentModel.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +32,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Plant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Scripts/PA_DroneController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MakeField.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Scripts/PA_DroneAxisInput.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/MakeField.cs" />
         <option value="$PROJECT_DIR$/Assets/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Scripts/PA_DroneController.cs" />
       </list>
     </option>
   </component>
@@ -93,6 +86,7 @@
       <workItem from="1611142983731" duration="1867000" />
       <workItem from="1611144882824" duration="1475000" />
       <workItem from="1611166058406" duration="7132000" />
+      <workItem from="1611227143435" duration="166000" />
     </task>
     <servers />
   </component>

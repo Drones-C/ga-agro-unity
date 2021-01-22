@@ -179,6 +179,50 @@
         </e>
         <e p="MakeField.cs" t="Include" />
         <e p="Plant.cs" t="Include" />
+        <e p="ProfessionalAssets" t="Include">
+          <e p="DronePack" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PA_DroneAxisInputEditor.cs" t="Include" />
+              <e p="PA_DroneCameraEditor.cs" t="Include" />
+              <e p="PA_DroneControllerEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CameraTeleportEffect.cs" t="Include" />
+              <e p="ColliderProxy.cs" t="Include" />
+              <e p="DroneDistanceLimit.cs" t="Include" />
+              <e p="DroneSelection.cs" t="Include" />
+              <e p="EnviromentLighting.cs" t="Include" />
+              <e p="LevelManager.cs" t="Include" />
+              <e p="LookAt.cs" t="Include" />
+              <e p="NightLights.cs" t="Include" />
+              <e p="PA_DroneAxisInput.cs" t="Include" />
+              <e p="PA_DroneCamera.cs" t="Include" />
+              <e p="PA_DroneController.cs" t="Include" />
+              <e p="PA_ObjectID.cs" t="Include" />
+              <e p="PAVR_3DJoystick.cs" t="Include" />
+              <e p="PAVR_DroneRemote.cs" t="Include" />
+              <e p="ProximityCannon.cs" t="Include" />
+              <e p="SoccerGame.cs" t="Include" />
+              <e p="Turbine.cs" t="Include" />
+              <e p="Turnable.cs" t="Include" />
+              <e p="WebGLHideMouse.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="DronePatrolAnimated.shader" t="Include" />
+              <e p="RimGlowShader.shader" t="Include" />
+              <e p="SpaceProbeAnimated.shader" t="Include" />
+              <e p="StandardShader [DoubleSided].shader" t="Include" />
+              <e p="StandardSpecular [DoubleSided].shader" t="Include" />
+              <e p="UFOAnimated.shader" t="Include" />
+              <e p="VertexAlpha.shader" t="Include" />
+            </e>
+          </e>
+          <e p="UIPack" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="PAUI_Joystick.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
