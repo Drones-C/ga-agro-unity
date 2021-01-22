@@ -83,8 +83,8 @@ public class Drone : MonoBehaviour
             StartCoroutine(TakeOff());
         else
         {
-            speed = 13;
-            StartCoroutine(Rotation());
+            speed = horisontal_speed;
+            StartCoroutine(Rotation(Vector3.forward));
             StartCoroutine(DroneLoop());
         }
     }
@@ -93,19 +93,41 @@ public class Drone : MonoBehaviour
     {
         yield return new WaitForSeconds(Time.deltaTime);
         Vector3 flight_vector;
-        
-        if(transform.position.x > 283)
+
+        //First line of the field
+        if(isAtx1 && transform.position.x > 283)
         {
             flight_vector = new Vector3(Time.deltaTime * -speed,0,0);
             Flight(flight_vector);
         }
+        else if(!isAtx2)
+        {
+            StartCoroutine(BalanceRotation(Vector3.forward,'z',-1));
+            StartCoroutine(Rotation(Vector3.up));
+            isAtx1 = false;
+            isAtx2 = true;
+        } 
+        
+        //Second line of the field
+        if(isAtx2 && transform.position.z < 412)
+        {
+            flight_vector = new Vector3(0,0,Time.deltaTime * speed);
+            Flight(flight_vector);
+        }
+        else if(!isAtx3)
+        {
+            isAtx2 = false;
+            isAtx3 = true;
+        } 
+        
+            
         
         StartCoroutine(DroneLoop());
     }
     
     private void Start()
     {
-        speed = 5;
+        speed = vertical_speed;
         StartCoroutine(TakeOff());
     }
 }
