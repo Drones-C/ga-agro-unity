@@ -7,19 +7,46 @@ public class Drone : MonoBehaviour
 {
     public GameObject TheDrone;
     private short speed;
+    private short vertical_speed = 5;
+    private short horisontal_speed = 13;
+    private short rot_speed = 45;
+    private float rot_angle = 0.13f;
+    private float rot_angle_balanced = 0.01f;
+
+    private bool isAtx1 = true;
+    private bool isAtx2 = false;
+    private bool isAtx3 = false;
+    private bool isAtx4 = false;
 
     private void Flight(Vector3 flight_vector)
     {
         transform.Translate(flight_vector,Space.Self);
     }
 
-    private IEnumerator Rotation(short dir = 1)
+    private IEnumerator Rotation(Vector3 vec, char axis = 'z', short dir = 1)
     {
         yield return new WaitForSeconds(Time.deltaTime);
-        TheDrone.transform.Rotate(Vector3.forward * dir,Time.deltaTime * 15);
+        TheDrone.transform.Rotate(vec * dir,Time.deltaTime * rot_speed);
 
-        if(TheDrone.transform.rotation.z < 0.14)
-            StartCoroutine(Rotation());
+        if (axis == 'z')
+        {
+            if(dir == 1 && TheDrone.transform.rotation.z < rot_angle
+               || dir == -1 && TheDrone.transform.rotation.z > -rot_angle)
+                StartCoroutine(Rotation(vec,axis,dir));
+        }
+        else if (axis == 'x')
+        {
+            if(dir == 1 && TheDrone.transform.rotation.x < rot_angle
+               || dir == -1 && TheDrone.transform.rotation.x > -rot_angle)
+                StartCoroutine(Rotation(vec,axis,dir));
+        }
+        else if (axis == 'y')
+        {
+            if(dir == 1 && TheDrone.transform.rotation.y < rot_angle
+               || dir == -1 && TheDrone.transform.rotation.y > -rot_angle)
+                StartCoroutine(Rotation(vec,axis,dir));
+        }
+    }
     }
 
     private IEnumerator TakeOff()
