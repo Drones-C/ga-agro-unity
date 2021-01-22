@@ -22,7 +22,6 @@
     <list default="true" id="b884a57d-e067-4cf6-bedb-d7c0a80bf57a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Drone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1611144882824" duration="1475000" />
       <workItem from="1611166058406" duration="7132000" />
       <workItem from="1611227143435" duration="166000" />
-      <workItem from="1611314646872" duration="3016000" />
+      <workItem from="1611314646872" duration="3773000" />
     </task>
     <servers />
   </component>
