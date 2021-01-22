@@ -7,8 +7,6 @@ public class Drone : MonoBehaviour
 {
     public short speed;
 
-    private bool gained_high = false;
-
     private void Flight(Vector3 flight_vector)
     {
         transform.Translate(flight_vector,Space.Self);
@@ -32,20 +30,30 @@ public class Drone : MonoBehaviour
         if (transform.position.y < 60)
             StartCoroutine(TakeOff());
         else
-            gained_high = true;
+        {
+            speed = 13;
+            StartCoroutine(Rotation());
+            StartCoroutine(DroneLoop());
+        }
+    }
+
+    private IEnumerator DroneLoop()
+    {
+        yield return new WaitForSeconds(Time.deltaTime);
+        Vector3 flight_vector;
+        
+        if(transform.position.x > 283)
+        {
+            flight_vector = new Vector3(Time.deltaTime * -speed,0,0);
+            Flight(flight_vector);
+        }
+        
+        StartCoroutine(DroneLoop());
     }
     
     private void Start()
     {
         speed = 5;
         StartCoroutine(TakeOff());
-    }
-
-    private void LateUpdate()
-    {
-        if (gained_high)
-        {
-            //
-        }
     }
 }
