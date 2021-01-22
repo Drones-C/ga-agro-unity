@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b884a57d-e067-4cf6-bedb-d7c0a80bf57a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ga-agro-unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Prefabs/_Drone [Quad].prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Prefabs/_Drone [Quad].prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Scripts/PA_DroneController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MakeField.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Scripts/PA_DroneAxisInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Drone.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,6 +46,7 @@
         <option value="$PROJECT_DIR$/Assets/MakeField.cs" />
         <option value="$PROJECT_DIR$/Assets/Plant.cs" />
         <option value="$PROJECT_DIR$/Assets/ProfessionalAssets/DronePack/Scripts/PA_DroneController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Drone.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +92,7 @@
       <workItem from="1611144882824" duration="1475000" />
       <workItem from="1611166058406" duration="7132000" />
       <workItem from="1611227143435" duration="166000" />
+      <workItem from="1611314646872" duration="1724000" />
     </task>
     <servers />
   </component>

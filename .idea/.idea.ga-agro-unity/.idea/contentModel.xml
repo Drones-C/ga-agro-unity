@@ -177,6 +177,7 @@
             <e p="ScrollUVWater.cs" t="Include" />
           </e>
         </e>
+        <e p="Drone.cs" t="Include" />
         <e p="MakeField.cs" t="Include" />
         <e p="Plant.cs" t="Include" />
         <e p="ProfessionalAssets" t="Include">
