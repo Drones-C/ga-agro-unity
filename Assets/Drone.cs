@@ -103,7 +103,7 @@ public class Drone : MonoBehaviour
         else if(!isAtx2)
         {
             StartCoroutine(BalanceRotation(Vector3.forward,'z',-1));
-            StartCoroutine(Rotation(Vector3.up));
+            StartCoroutine(Rotation(Vector3.right,'x',1));
             isAtx1 = false;
             isAtx2 = true;
         } 
