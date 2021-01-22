@@ -47,6 +47,30 @@ public class Drone : MonoBehaviour
                 StartCoroutine(Rotation(vec,axis,dir));
         }
     }
+
+    private IEnumerator BalanceRotation(Vector3 vec, char axis = 'z', short dir = 1)
+    {
+        yield return new WaitForSeconds(Time.deltaTime);
+        TheDrone.transform.Rotate(vec * dir,Time.deltaTime * rot_speed);
+
+        if (axis == 'z')
+        {
+            if(dir == 1 && TheDrone.transform.rotation.z < -rot_angle_balanced
+               || dir == -1 && TheDrone.transform.rotation.z > rot_angle_balanced)
+                StartCoroutine(BalanceRotation(vec,axis,dir));
+        }
+        else if (axis == 'x')
+        {
+            if(dir == 1 && TheDrone.transform.rotation.x < -rot_angle_balanced
+               || dir == -1 && TheDrone.transform.rotation.x > rot_angle_balanced)
+                StartCoroutine(BalanceRotation(vec,axis,dir));
+        }
+        else if (axis == 'y')
+        {
+            if(dir == 1 && TheDrone.transform.rotation.y < -rot_angle_balanced
+               || dir == -1 && TheDrone.transform.rotation.y > rot_angle_balanced)
+                StartCoroutine(BalanceRotation(vec,axis,dir));
+        }
     }
 
     private IEnumerator TakeOff()
